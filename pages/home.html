@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameVault - Gaming Hub</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2 class="logo"><i class="fas fa-gamepad"></i> GameVault</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="./home.html" class="nav-item active" data-page="home"
+          ><i class="fas fa-home"></i>
+          <span data-i18n="nav-library">Library</span></a
+        >
+        <a href="./store.html" class="nav-item" data-page="store"
+          ><i class="fas fa-shopping-cart"></i>
+          <span data-i18n="nav-store">Store</span></a
+        >
+        <a href="./trending.html" class="nav-item" data-page="trending"
+          ><i class="fas fa-fire"></i>
+          <span data-i18n="nav-trending">Trending</span></a
+        >
+        <a href="./friends.html" class="nav-item" data-page="friends"
+          ><i class="fas fa-users"></i>
+          <span data-i18n="nav-friends">Friends</span></a
+        >
+        <a href="./downloads.html" class="nav-item" data-page="downloads"
+          ><i class="fas fa-download"></i>
+          <span data-i18n="nav-downloads">Downloads</span></a
+        >
+      </nav>
+      <button class="launch-button">
+        <i class="fas fa-play"></i>
+        <span data-i18n="nav-launch">LAUNCH GAME</span>
+      </button>
+    </aside>
+
+    <header class="top-nav">
+      <div class="nav-breadcrumb">
+        <span class="breadcrumb-item">GameVault</span>
+        <span class="breadcrumb-divider">/</span>
+        <span class="breadcrumb-item" data-i18n="nav-library">LIBRARY</span>
+      </div>
+      <div class="nav-search">
+        <input
+          type="search"
+          placeholder="Search for items..."
+          class="search-input"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="nav-icons">
+        <button class="icon-button cart-button">
+          <i class="fas fa-shopping-cart"></i><span class="cart-count">0</span>
+        </button>
+        <button class="icon-button">
+          <i class="fas fa-envelope"></i
+          ><span class="notification-badge">2</span>
+        </button>
+        <button class="icon-button"><i class="fas fa-cog"></i></button>
+        <button class="profile-button">
+          <i class="fas fa-user-circle"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-label">
+            <span class="label-tag" data-i18n="hero-label"
+              >PREMIUM EDITION</span
+            >
+          </div>
+          <h1 class="hero-title" data-i18n="hero-title">
+            CYBERPULSE:<br />RELOADED
+          </h1>
+          <p class="hero-description" data-i18n="hero-desc">
+            GameVault is a modern platform designed to organize, store, and
+            manage your game library in one place.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">
+              <i class="fas fa-play"></i>
+              <span data-i18n="btn-launch">LAUNCH</span>
+            </button>
+            <button class="btn btn-secondary">
+              <i class="fas fa-info-circle"></i>
+              <span data-i18n="btn-details">VIEW DETAILS</span>
+            </button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="../assets/portrait-of-a-male-gamer-playing-online-games-on-a-computer-cyber-sport-concept-generative-ai-free-photo.jpg"
+            alt="Cyberpulse Reloaded"
+          />
+        </div>
+      </section>
+
+      <section class="special-offers">
+        <div class="section-header">
+          <h2 data-i18n="section-offers">Special Offers</h2>
+          <button class="view-all" data-i18n="view-all-offers">
+            View All Offers >
+          </button>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="../assets/rdr2-1280-1540463019272_160w.jpg"
+                alt="Red Dead Redemption 2"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Red Dead Redemption 2</h3>
+              <div class="product-discount">-75%</div>
+            </div>
+            <div class="product-footer"></div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="../assets/7237816380f0b316c6f440b7776ba93d.jpg"
+                alt="Grand Theft Auto V"
+              />
+            </div>
+            <div class="product-info"><h3>Grand Theft Auto V</h3></div>
+            <div class="product-footer"></div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img src="../assets/maxresdefault.jpg" alt="EA Sports FC 26" />
+            </div>
+            <div class="product-info"><h3>EA Sports FC 26</h3></div>
+            <div class="product-footer"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="top-sellers">
+        <div class="section-header">
+          <h2 data-i18n="section-top">Top Sellers</h2>
+          <button class="view-all" data-i18n="view-all-top">View All ></button>
+        </div>
+        <div class="products-carousel">
+          <div class="product-card-small">
+            <img
+              src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=200&h=200&fit=crop"
+              alt="Void Walker"
+            />
+            <h4>Void Walker</h4>
+            <span class="price">$19.99</span>
+          </div>
+          <div class="product-card-small">
+            <img
+              src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=300&h=400&fit=crop"
+              alt="Neon League"
+            />
+            <h4>Neon League</h4>
+            <span class="price">$19.99</span>
+          </div>
+          <div class="product-card-small">
+            <img
+              src="https://images.unsplash.com/photo-1556438064-2d7646166914?w=200&h=200&fit=crop"
+              alt="Void Guardian"
+            />
+            <h4>Void Guardian</h4>
+            <span class="price">$5.99</span>
+          </div>
+          <div class="product-card-small">
+            <img
+              src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=200&h=200&fit=crop"
+              alt="Silver Core"
+            />
+            <h4>Silver Core</h4>
+            <span class="price">$9.99</span>
+          </div>
+          <div class="product-card-small">
+            <img src="../assets/R.jpg" alt="Neon Nights" />
+            <h4>Neon Nights</h4>
+            <span class="price">$9.99</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter-section">
+        <div class="newsletter-content">
+          <h2 data-i18n="newsletter-home-title">Join the Collective</h2>
+          <p data-i18n="newsletter-home-desc">
+            Get the latest news, deals, and exclusive content from the NEON
+            NEXUS gaming community.
+          </p>
+          <div class="newsletter-form" id="newsletterFormHome">
+            <input
+              type="email"
+              id="newsletterEmailHome"
+              placeholder="Your email here..."
+              class="newsletter-input"
+              data-i18n="ph-newsletter"
+            />
+            <span
+              class="newsletter-error"
+              style="color: #ff006e; font-size: 0.85rem; display: none"
+            ></span>
+            <button class="btn btn-primary" data-i18n="btn-subscribe">
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="#privacy" data-i18n="footer-privacy">Privacy Policy</a>
+          <a href="#terms" data-i18n="footer-terms">Terms of Service</a>
+          <a href="#cookies" data-i18n="footer-cookies">Cookie Preferences</a>
+          <a href="#legal" data-i18n="footer-legal">Legal</a>
+        </div>
+        <div class="footer-info">
+          <p data-i18n="footer-copy">Â© 2026 GAMEVAULT. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <div id="cartModal" class="cart-modal">
+      <div class="cart-modal-content">
+        <div class="cart-modal-header">
+          <h2>
+            <i class="fas fa-shopping-cart"></i>
+            <span data-i18n="cart-title">Shopping Cart</span>
+          </h2>
+          <button class="cart-close-btn">&times;</button>
+        </div>
+        <div class="cart-items">
+          <div class="empty-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <p data-i18n="cart-empty">Your cart is empty</p>
+            <span data-i18n="cart-empty-hint"
+              >Add some games to get started!</span
+            >
+          </div>
+        </div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span
+              ><span data-i18n="total-label">Total:</span>
+              <strong>$0.00</strong></span
+            >
+          </div>
+          <div class="cart-actions">
+            <button
+              class="btn btn-secondary cart-clear-btn"
+              data-i18n="btn-clear-cart"
+            >
+              Clear Cart
+            </button>
+            <button
+              class="btn btn-primary cart-checkout-btn"
+              data-i18n="btn-checkout"
+            >
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scriptes/main.js"></script>
+    <script src="../scriptes/theme-lang.js"></script>
+  </body>
+</html>
