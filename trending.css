@@ -1,0 +1,260 @@
+
+
+
+.power-rankings {
+  margin-bottom: 3rem;
+}
+
+.rankings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.rankings-header h2 {
+  color: #00d4ff;
+  margin: 0;
+}
+
+.rankings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ranking-card {
+  background: #141430;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.ranking-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  border-color: #00d4ff;
+}
+
+.ranking-card.featured {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.ranking-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #ff006e, #ff0055);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  z-index: 2;
+}
+
+.ranking-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.ranking-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ranking-info h3 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.ranking-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #b0b0d0;
+}
+
+.ranking-stats span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ranking-stats span:first-child {
+  color: #00ff88;
+}
+
+.on-the-radar {
+  background: #1a1f3a;
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.on-the-radar h3 {
+  color: #ff006e;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.radar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.radar-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+}
+
+.radar-item:last-child {
+  border-bottom: none;
+}
+
+.radar-number {
+  background: #00d4ff;
+  color: #0a0e27;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.radar-item h4 {
+  color: #ffffff;
+  margin: 0;
+  flex: 1;
+}
+
+
+.streamed-section {
+  margin-bottom: 3rem;
+}
+
+.streamed-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.streamed-section .section-header h2 {
+  color: #00d4ff;
+  margin: 0;
+}
+
+.streamed-section .view-all {
+  background: transparent;
+  color: #00d4ff;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.streamed-section .view-all:hover {
+  color: #ff006e;
+}
+
+.streamed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.stream-card {
+  background: #141430;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.stream-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  border-color: #00d4ff;
+}
+
+.stream-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.stream-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.stream-card:hover .stream-thumbnail img {
+  transform: scale(1.05);
+}
+
+.stream-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #ff006e, #ff0055);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.stream-info {
+  padding: 1rem;
+}
+
+.stream-info h4 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.steam-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: #b0b0d0;
+}
+
+.steam-profile img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
