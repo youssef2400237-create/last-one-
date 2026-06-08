@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Vault - Sign Up</title>
+    <link rel="stylesheet" href="../styles/sign-up.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=hDhiJqR9QOVb7GfvRvloeqB66zB8D6c1NndnIsVpL03Jsl66tPEoVxwcC2ImCrY1Zx3KgEbDXX1n2D1ovyJSbej59o2ZdpFCx_1ynmHBf4jMwqPDEpydvHTE0exbX6C-80pLwYoRw85YJd5pa8fMEuyQyjk0613u57J9gyRdZqgeEJYO49ionl8SlOI2WIJyTQEnqCWbhW7gscFFi_wRRkekeXMKdrVMzlnj7joDQHzbSpz1bGqhaiX0vgQV7rqzFfaOUe0tjTEsEH0XsS6yEQ" charset="UTF-8"></script></head>
+  <body>
+    <video
+      autoplay
+      muted
+      loop
+      class="background-video"
+      src="../assets/conroller.mp4"
+    >
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="carry_signup">
+      <form class="signup_page" id="signupForm">
+        <h1 class="signup__header">Create Account</h1>
+        <p class="signup__subtitle">Join the Game Vault community today</p>
+
+        <!-- Full Name -->
+        <div class="carry__field">
+          <label for="fullname">FULL NAME:</label>
+          <div class="input__wrapper">
+            <input
+              type="text"
+              class="inputs"
+              placeholder="Enter your full name"
+              id="fullname"
+              required
+            />
+            <i class="fas fa-user field__icon"></i>
+          </div>
+          <span class="error error-name"></span>
+        </div>
+
+        <!-- Email -->
+        <div class="carry__field">
+          <label for="email">EMAIL:</label>
+          <div class="input__wrapper">
+            <input
+              type="email"
+              class="inputs"
+              placeholder="Enter your email"
+              id="email"
+              required
+            />
+            <i class="fas fa-envelope field__icon"></i>
+          </div>
+          <span class="error error-email"></span>
+        </div>
+
+        <!-- Password -->
+        <div class="carry__field">
+          <label for="password">PASSWORD:</label>
+          <div class="input__wrapper">
+            <input
+              type="password"
+              class="inputs input__password"
+              placeholder="Create a password"
+              id="password"
+              required
+            />
+            <i class="fas fa-eye eye__pass" id="togglePassword"></i>
+          </div>
+          <span class="error error-password"></span>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="carry__field">
+          <label for="confirmPassword">CONFIRM PASSWORD:</label>
+          <div class="input__wrapper">
+            <input
+              type="password"
+              class="inputs input__confirm"
+              placeholder="Confirm your password"
+              id="confirmPassword"
+              required
+            />
+            <i class="fas fa-eye eye__pass" id="toggleConfirm"></i>
+          </div>
+          <span class="error error-confirm"></span>
+        </div>
+
+        <button type="submit" class="btn">Create Account</button>
+
+        <div class="signup__footer">
+          <p>Already have an account? <a href="../index.html">Login here</a></p>
+        </div>
+      </form>
+    </div>
+
+    <script src="../scriptes/sign-up.js"></script>
+  </body>
+</html>
